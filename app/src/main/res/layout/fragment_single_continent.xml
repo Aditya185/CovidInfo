@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.singleContinent.SingleContinentFragment">
+        <TextView
+            android:id="@+id/continent_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/world_map"
+            android:scaleY="1.2"
+            android:layout_below="@+id/continent_name"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+
+            android:src="@drawable/worldmap"
+            />
+
+
+        <ScrollView
+            android:layout_below="@+id/world_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/error_text"
+                    android:text=""
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_cases"
+                    android:text=""
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/today_cases"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/total_cases"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_death"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/today_cases"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/today_death"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/total_death"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_recovered"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/today_death"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/today_recovered"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/total_recovered"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_active"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/today_recovered"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_critical"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/total_active"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/case_per_one_million"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/total_critical"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/death_per_one_million"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/case_per_one_million"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/total_tests"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/death_per_one_million"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    /> <TextView
+                android:id="@+id/test_per_one_million"
+                android:text=""
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/total_tests"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+                <TextView
+                    android:id="@+id/affected_countries"
+                    android:text=""
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/test_per_one_million"
+                    android:fontFamily="cursive"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

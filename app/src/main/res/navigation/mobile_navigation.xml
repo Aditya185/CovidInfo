@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_world">
+
+    <fragment
+        android:id="@+id/nav_world"
+        android:name="com.adityaprakash.covidinfo.ui.world.WorldFragment"
+        android:label="@string/menu_world"
+        tools:layout="@layout/fragment_world" />
+
+    <fragment
+        android:id="@+id/nav_continent"
+        android:name="com.adityaprakash.covidinfo.ui.continent.ContinentFragment"
+        android:label="@string/menu_continent"
+        tools:layout="@layout/fragment_continent" >
+        <action
+            android:id="@+id/action_nav_continent_to_singleContinentFragment"
+            app:destination="@id/singleContinentFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_country"
+        android:name="com.adityaprakash.covidinfo.ui.country.CountryFragment"
+        android:label="@string/menu_country"
+        tools:layout="@layout/fragment_country" >
+        <action
+            android:id="@+id/action_nav_country_to_singleCountryFragment"
+            app:destination="@id/singleCountryFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/singleContinentFragment"
+        android:name="com.adityaprakash.covidinfo.ui.singleContinent.SingleContinentFragment"
+
+        tools:layout="@layout/fragment_single_continent" />
+    <fragment
+        android:id="@+id/singleCountryFragment"
+        android:name="com.adityaprakash.covidinfo.ui.singleCountry.SingleCountryFragment"
+
+        tools:layout="@layout/fragment_single_country" />
+</navigation>
