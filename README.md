@@ -31,9 +31,9 @@ This is an android app that shows details of world-wise, continent-wise,country-
 
 ### Some screen shots of this application
 
-![Home](https://github.com/Aditya185/MovieInfoApp/blob/master/screenshots/s1.jpg)
-![Movie](https://github.com/Aditya185/MovieInfoApp/blob/master/screenshots/s2.jpg)
-![TV Show](https://github.com/Aditya185/MovieInfoApp/blob/master/screenshots/s3.jpg)
+![Home](https://github.com/Aditya185/CovidInfo/blob/master/ss/ss1.jpg)
+![SideBar](https://github.com/Aditya185/CovidInfo/blob/master/ss/ss2.jpg)
+![country](https://github.com/Aditya185/CovidInfo/blob/master/ss/ss3.jpg)
 
 
 
